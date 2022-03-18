@@ -42,37 +42,29 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
       {
         text: '后端',
-        link: '/java/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/Java/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           //   说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
-            items: [{ text: 'JavaScript', link: '/pages/8143cc480faf9a11/' }],
+            text: 'Java',
+            items: [
+              { text: 'JavaSE', link: '/pages/df8281/' },
+              { text: 'JavaEE', link: '/pages/544a3f/' },
+            ],
           },
           {
-            text: '学习笔记',
+            text: 'Python',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
+              { text: 'Python', link: '/pages/35c9ab/' },
+              { text: 'Python模块', link: '/pages/cf7131/' },
+              { text: '机器学习', link: '/pages/ddf9fb/' },
+            ],
+          },
+          {
+            text: '服务器',
+            items: [
+              { text: 'Linux', link: '/pages/124a07/' },
+              { text: 'SQL', link: '/pages/e051f6/' },
             ],
           },
         ],
@@ -96,10 +88,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '前端',
         link: '/web/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: 'html', link: '/pages/23186a/' },
+          { text: 'Vue2', link: '/pages/6af871/' },
+        ],
+      },
+      {
+        text: '408',
+        link: '/408/',
+        items: [
+          { text: '数据结构与算法', link: '/pages/8e5251/' },
         ],
       },
     ],
@@ -218,7 +215,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       desc: [
         'Iekr个人博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu',
         '故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt',
-        '这一生波澜壮阔或是不惊都没问题 —— 来自 Weibw',
+        '这一生波澜壮阔或是不惊都没问题 —— 来自 Weibo',
       ], // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFadeIn 为 true 生效
       descFontSize: '1.4rem', // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
       descFadeInTime: 200, // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
