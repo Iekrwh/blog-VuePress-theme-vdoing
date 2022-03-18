@@ -55,17 +55,20 @@
             :to="`/categories/?category=${encodeURIComponent(item)}`"
             v-for="(item, index) in categories"
             :key="index"
-            >{{ item + ' ' }}</router-link
+            >{{ item + " " }}</router-link
           >
         </div>
+        <PagesView style="margin-left: 0" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import PagesView from './PagesView.vue';
 export default {
-  data() {
+  components: { PagesView },
+  data () {
     return {
       date: '',
       classify1: '',
@@ -75,17 +78,17 @@ export default {
       categories: []
     }
   },
-  created() {
+  created () {
     this.getPageInfo()
   },
   watch: {
-    '$route.path'() {
+    '$route.path' () {
       this.classifyList = []
       this.getPageInfo()
     }
   },
   methods: {
-    getPageInfo() {
+    getPageInfo () {
       const pageInfo = this.$page
       const { relativePath } = pageInfo
       const { sidebar } = this.$themeConfig
@@ -117,7 +120,7 @@ export default {
       this.categories = categories
     },
 
-    getLink(item) {
+    getLink (item) {
       const { cataloguePermalink } = this
       if (item === cataloguePermalink) {
         return cataloguePermalink
@@ -132,62 +135,101 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-@require '../styles/wrapper.styl'
+@require '../styles/wrapper.styl';
 
-.articleInfo-wrap
-  @extend $wrapper
-  position relative
-  z-index 1
-  color #888
-  .articleInfo
-    overflow hidden
-    font-size 0.92rem
-    .breadcrumbs
-      margin 0
-      padding 0
-      overflow hidden
-      display inline-block
-      line-height 2rem
-      @media (max-width 960px)
-        width 100%
-      li
-        list-style-type none
-        float left
-        padding-right 5px
-        &:after
-          content '/'
-          margin-left 5px
-          color #999
-        &:last-child
-          &:after
-            content ''
-        a
-          color #888
-          &:before
-            font-size 0.92rem
-          &:hover
-            color $accentColor
-        .icon-home
-          text-decoration none
-    .info
-      float right
-      line-height 32px
-      @media (max-width 960px)
-        float left
-      div
-        float left
-        margin-left 20px
-        font-size 0.8rem
-        @media (max-width 960px)
-          margin 0 20px 0 0
-        &:before
-          margin-right 3px
-        a
-          color #888
-          &:hover
-            text-decoration none
-        a.beLink
-          &:hover
-            color $accentColor
-            text-decoration underline
+.articleInfo-wrap {
+  @extend $wrapper;
+  position: relative;
+  z-index: 1;
+  color: #888;
+
+  .articleInfo {
+    overflow: hidden;
+    font-size: 0.92rem;
+
+    .breadcrumbs {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: inline-block;
+      line-height: 2rem;
+
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+
+      li {
+        list-style-type: none;
+        float: left;
+        padding-right: 5px;
+
+        &:after {
+          content: '/';
+          margin-left: 5px;
+          color: #999;
+        }
+
+        &:last-child {
+          &:after {
+            content: '';
+          }
+        }
+
+        a {
+          color: #888;
+
+          &:before {
+            font-size: 0.92rem;
+          }
+
+          &:hover {
+            color: $accentColor;
+          }
+        }
+
+        .icon-home {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .info {
+      float: right;
+      line-height: 32px;
+
+      @media (max-width: 960px) {
+        float: left;
+      }
+
+      div {
+        float: left;
+        margin-left: 20px;
+        font-size: 0.8rem;
+
+        @media (max-width: 960px) {
+          margin: 0 20px 0 0;
+        }
+
+        &:before {
+          margin-right: 3px;
+        }
+
+        a {
+          color: #888;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        a.beLink {
+          &:hover {
+            color: $accentColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
