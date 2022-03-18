@@ -2,7 +2,11 @@
  * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
 import { resolve } from 'path'
-import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
+import {
+  defineConfig4CustomTheme,
+  UserPlugins,
+  UserPlugins,
+} from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
@@ -329,6 +333,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         transformer: (timestamp, lang) => {
           return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
         },
+      },
+    ],
+    [
+      {
+        name: 'custom-plugins',
+        globalUIComponents: ['LastReadingPopup'], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
       },
     ],
   ],
