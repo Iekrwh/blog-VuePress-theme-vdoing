@@ -10,11 +10,11 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'blog.iekrhaloo.com' > CNAME
+# echo 'blog.iekrhaloo.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:Iekrwh/blog-VuePress-theme-vdoing.git
+  githubUrl=https://github.com/Iekrwh/blog-VuePress-theme-vdoing.git
 else
   msg='来自github actions的自动部署'
   githubUrl=https://Iekrwh:${GITHUB_TOKEN}@github.com/Iekrwh/blog-VuePress-theme-vdoing.git
