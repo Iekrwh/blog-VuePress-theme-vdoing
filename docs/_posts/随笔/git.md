@@ -1,3 +1,13 @@
+---
+title: git
+date: 2022-03-19 15:31:48
+permalink: /pages/b9cc16/
+sidebar: auto
+categories:
+  - 随笔
+tags:
+  - 
+---
 ## 设置用户名签名
 
 ```shell
