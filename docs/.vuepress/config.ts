@@ -18,8 +18,8 @@ import {
 } from './webSiteInfo/readFile'
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  // theme: 'vdoing', // 使用npm包主题
-  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+  theme: 'vdoing', // 使用npm包主题
+//   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
     '/': {
