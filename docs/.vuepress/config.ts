@@ -87,7 +87,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '前端',
         link: '/web/',
         items: [
-          { text: 'html', link: '/pages/23186a/' },
+          { text: 'HTML', link: '/pages/23186a/' },
           { text: 'Vue2', link: '/pages/6af871/' },
         ],
       },
@@ -95,7 +95,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '408',
         link: '/408/',
         items: [
-          { text: '数据结构与算法', link: '/pages/8e5251/' },
+          { text: '数据结构与算法', link: '/pages/f6d8d6/' },
         ],
       },
       {
