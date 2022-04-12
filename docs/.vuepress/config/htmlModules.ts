@@ -28,8 +28,8 @@ const htmlModule: VdoingThemeConfig['htmlModules'] = {
       font-size: 20px;
       font-weight: bold;
       margin: 0 0 8px 0;
-    ">放点图
-    <img src="https://gitee.com/Iekrwh/md-images/raw/master/images/2$B8JFSXYL_RLH8_GYY7AS1.gif"  style="width:100%;" />
+    ">阿喵喵震压
+    <img src="https://cdn.jsdelivr.net/gh/Iekrwh/images/md-images/2$B8JFSXYL_RLH8_GYY7AS1.gif"  style="width:100%;" />
     </div>`,
   // `<!-- 纵向自适应 -->
   // <ins class="adsbygoogle"

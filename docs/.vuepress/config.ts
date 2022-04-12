@@ -158,7 +158,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar:
-        'https://gitee.com/Iekrwh/md-images/raw/master/images/$7ZY44WI036RW5{EPWQXCX6.jpg',
+        'https://cdn.jsdelivr.net/gh/Iekrwh/images/md-images/$7ZY44WI036RW5{EPWQXCX6.jpg',
       name: 'Iekr',
       slogan: '苦逼后端开发',
     },
@@ -387,6 +387,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
+    extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ] // 新版本支持h2~h6标题
   },
 
   // 监听文件变化并重新构建
