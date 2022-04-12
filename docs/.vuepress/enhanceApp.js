@@ -1,4 +1,5 @@
 import LastReadingPopup from './components/LastReadingPopup.vue'
+let busuanzi;
 
 // import vue from 'vue/dist/vue.esm.browser'
 export default ({
@@ -75,9 +76,8 @@ export default ({
   }
 }
 
-/**
- * 如果元素存在，则删除
- */
+
+  //如果元素存在，则删除
  function removeElement(selector) {
     var element = document.querySelector(selector);
     if (element) {
@@ -85,9 +85,8 @@ export default ({
     }
   }
   
-  /**
-   * 文章页的访问量
-   */
+
+    //文章页的访问量
   function getPageViewCouter(iterationTime = 3000) {
     if (busuanzi) {
       busuanzi.fetch();
@@ -120,9 +119,8 @@ export default ({
       }, iterationTime);
     }, iterationTime);
   }
-  /**
-   * 添加浏览量元素
-   */
+
+    //添加浏览量元素
   function addPageView() {
     // 创建访问量的元素
     let template = document.createElement('div');
@@ -151,9 +149,8 @@ export default ({
     }`;
     document.head.appendChild(style);
   }
-  /**
-   * 添加当前文章页的字数元素
-   */
+
+   //添加当前文章页的字数元素   
   function addPageWordsCount(wordsCount) {
     if (wordsCount) {
       let template = document.createElement('div');
@@ -168,9 +165,8 @@ export default ({
     }
   }
   
-  /**
-   * 添加预计的阅读时间
-   */
+  
+   //添加预计的阅读时间
   function addReadTimeCount(readTimeCount) {
     let template = document.createElement('div');
     template.title = '预阅读时长';

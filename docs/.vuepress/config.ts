@@ -5,7 +5,6 @@ import { resolve } from 'path'
 import {
   defineConfig4CustomTheme,
   UserPlugins,
-  UserPlugins,
 } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
@@ -373,15 +372,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     [
-      {
-        name: 'custom-plugins',
-        globalUIComponents: ['LastReadingPopup'], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-      },
-    ],
-    [
+        //BlockToggle仿mac风格代码块 LastReadingPopup记录曾经阅读位置模块
         {
             name: 'custom-plugins',
-            globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+            globalUIComponents: ["BlockToggle","LastReadingPopup"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
         }
     ],
   ],
