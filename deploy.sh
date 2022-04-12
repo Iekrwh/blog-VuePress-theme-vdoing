@@ -9,9 +9,9 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-# deploy to github pages
+deploy to github pages
 # <<<<<<< HEAD
-# echo 'blog.iekrhaloo.com' > CNAME
+echo 'blog.iekrhaloo.top' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'

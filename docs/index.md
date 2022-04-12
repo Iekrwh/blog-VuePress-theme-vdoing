@@ -88,4 +88,5 @@ pageClass: vdoing-index-class
 <ClientOnly>
   <IndexBigImg />
   <Fantasy />
+  <WebInfo/>
 </ClientOnly>

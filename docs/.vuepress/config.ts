@@ -189,11 +189,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'Iekr | Blog <br> <a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备2022039661号</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 自定义hmtl(广告)模块
     htmlModules,
+    
     // 站点配置（首页 & 文章页）
     blogInfo: {
       blogCreate: '2022-03-18', // 博客创建时间
