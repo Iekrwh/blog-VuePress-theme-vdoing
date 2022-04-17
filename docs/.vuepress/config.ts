@@ -264,7 +264,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           '后端博客,个人技术博客,后端/前端开发,后端/前端框架,web前端,后端面试题,技术文档,学习,面试,Java,Scala,Hadoop,Spring,Spring Boot,Spring Cloud,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
