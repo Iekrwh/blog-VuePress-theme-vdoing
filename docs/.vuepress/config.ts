@@ -2,10 +2,7 @@
  * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
 import { resolve } from 'path'
-import {
-  defineConfig4CustomTheme,
-  UserPlugins,
-} from 'vuepress/config'
+import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
@@ -18,7 +15,7 @@ import {
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm包主题
-//   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+  //   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
     '/': {
@@ -28,7 +25,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         '后端技术博客,专注后端学习与总结。Java,Spring,Scala,Hadoop,Spark,Flink,Python,Linux,Docker等技术文章。',
     },
   },
-//   base: '/blog-VuePress-theme-vdoing/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  //   base: '/blog-VuePress-theme-vdoing/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -47,56 +44,106 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Java',
             items: [
-              { text: 'JavaSE', link: '/pages/df8281/' },
-              { text: 'JavaEE', link: '/pages/544a3f/' },
+              { text: 'JavaSE', link: '/pages/844323/' },
+              { text: 'JavaEE', link: '/pages/c10aa0/' },
+              { text: '设计模式', link: '/pages/181a4e/' },
+            //   { text: 'JVM', link: '/pages/' },
+            //   { text: 'JUC', link: '/pages/' },
+            //   { text: 'Spring', link: '/pages/' },
             ],
           },
           {
             text: 'Python',
             items: [
-              { text: 'Python', link: '/pages/35c9ab/' },
-              { text: 'Python模块', link: '/pages/cf7131/' },
-              { text: '机器学习', link: '/pages/ddf9fb/' },
+              { text: 'Python', link: '/pages/28b8ed/' },
+              { text: 'Python模块', link: '/pages/e8a1e9/' },
+              { text: '机器学习', link: '/pages/1bc408/' },
             ],
           },
           {
             text: '服务器',
             items: [
-              { text: 'Linux', link: '/pages/124a07/' },
-              { text: 'SQL', link: '/pages/e051f6/' },
+              { text: 'Linux', link: '/pages/0a1800/' },
+              { text: 'MySQL', link: '/pages/a45110/' },
+              { text: 'NoSQL', link: '/pages/2b3ac4/' },
+            ],
+          },
+          {
+            text: '项目',
+            items: [
+              { text: '传智健康', link: '/pages/5c2bda/' },
+              { text: '畅购商城', link: '/pages/c57520/' },
+            //   { text: '博客', link: '/pages/' },
+            //   { text: 'WiKi', link: '/pages/' },
+            //   { text: '谷粒商城', link: '/pages/' },
+            //   { text: '云E办', link: '/pages/' },
             ],
           },
         ],
       },
       {
         text: '大数据',
-        link: '/hadoop/',
+        link: '/Hadoop/',
+
         items: [
-          { text: 'Hadoop', link: '/pages/8e0c98/' },
-          { text: 'Zookeeper', link: '/pages/f38fc8/' },
-          { text: 'Hive', link: '/pages/2315d6/' },
-          { text: 'Flume', link: '/pages/b084db/' },
-          { text: 'Kafka', link: '/pages/872cdc/' },
-          { text: 'Azkaban', link: '/pages/bac882/' },
-          { text: 'Hbase', link: '/pages/310c39/' },
-          { text: 'Scala', link: '/pages/d2afbe/' },
-          { text: 'Spark', link: '/pages/cc783e/' },
+          {
+            text: 'Hadoop生态',
+            items: [
+              { text: 'Hadoop', link: '/pages/27eb49/' },
+              { text: 'Zookeeper', link: '/pages/801487/' },
+              { text: 'Hive', link: '/pages/060f01/' },
+              { text: 'Flume', link: '/pages/c13817/' },
+              { text: 'Kafka', link: '/pages/90b39f/' },
+              { text: 'Azkaban', link: '/pages/bac882/' },
+              { text: 'Hbase', link: '/pages/f4e35e/' },
+              { text: 'Scala', link: '/pages/a9a4c4/' },
+              { text: 'Spark', link: '/pages/5a1e93/' },
+            ],
+          },
+          {
+            text: '大数据项目',
+            items: [
+              { text: '离线数仓', link: '/pages/9ba1d7/' },
+            //   { text: '用户画像', link: '/pages/' },
+            //   { text: '实时计算', link: '/pages/' },
+            ],
+          },
         ],
       },
       {
         text: '前端',
-        link: '/web/',
+        link: '/Web/',
         items: [
-          { text: 'HTML', link: '/pages/23186a/' },
-          { text: 'Vue2', link: '/pages/6af871/' },
+          {
+            text: 'HTML基础',
+            items: [
+              { text: 'HTML', link: '/pages/1e0197/' },
+              { text: 'JavaScript', link: '/pages/7a583f/' },
+            ],
+          },
+          {
+            text: 'Vue',
+            items: [
+              { text: 'Vue2', link: '/pages/6af871/' },
+            //   { text: 'Vue3', link: '/pages/' },
+              { text: 'Uni-APP', link: '/pages/79c836/' },
+
+            ],
+          },
+          {
+            text: 'React',
+            items: [
+            //   { text: 'React', link: '/pages/' },
+              
+            ],
+          },
+
         ],
       },
       {
         text: '408',
         link: '/408/',
-        items: [
-          { text: '数据结构与算法', link: '/pages/f6d8d6/' },
-        ],
+        items: [{ text: '数据结构与算法', link: '/pages/ef1313/' }],
       },
       {
         text: '索引',
@@ -110,9 +157,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '更多',
         // link: '/archives/',
-        items: [
-          { text: '导航站', link: '/navigation/' },
-        ],
+        items: [{ text: '导航站', link: '/navigation/' }],
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
@@ -200,7 +245,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 自定义hmtl(广告)模块
     htmlModules,
-    
+
     // 站点配置（首页 & 文章页）
     blogInfo: {
       blogCreate: '2022-03-18', // 博客创建时间
@@ -229,7 +274,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bgTimeColor: true, // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
       descFade: true, // 是否开启图片中间描述的淡入效果，默认为 false
       desc: [
-        'Iekr个人博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu',
+        'Iekr个人博客。卷，使劲卷。',
         '故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt',
         '这一生波澜壮阔或是不惊都没问题 —— 来自 Weibo',
       ], // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFadeIn 为 true 生效
@@ -245,9 +290,27 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/twikoo@1.4.18/dist/twikoo.all.min.js' }], //Twikoo评论
+    [
+      'script',
+      {
+        src: 'https://cdn.jsdelivr.net/npm/twikoo@1.4.18/dist/twikoo.all.min.js',
+      },
+    ], //Twikoo评论
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], //代码块图标
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css',
+      },
+    ], //代码块图标
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }], //解决chrome 网站统计不准确问题
     [
       'link',
@@ -380,17 +443,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     [
-        //BlockToggle仿mac风格代码块 LastReadingPopup记录曾经阅读位置模块
-        {
-            name: 'custom-plugins',
-            globalUIComponents: ["BlockToggle","LastReadingPopup","Twikoo"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-        }
+      //BlockToggle仿mac风格代码块 LastReadingPopup记录曾经阅读位置模块
+      {
+        name: 'custom-plugins',
+        globalUIComponents: ['BlockToggle', 'LastReadingPopup', 'Twikoo'], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+      },
     ],
   ],
 
   markdown: {
     lineNumbers: true,
-    extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ] // 新版本支持h2~h6标题
+    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 新版本支持h2~h6标题
   },
 
   // 监听文件变化并重新构建
