@@ -11,7 +11,7 @@ cd docs/.vuepress/dist
 
 deploy to github pages
 # <<<<<<< HEAD
-echo 'blog.iekrhaloo.top' > CNAME
+echo 'doc.iekrhaloo.eu.org' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'

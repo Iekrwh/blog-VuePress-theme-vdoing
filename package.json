@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "busuanzi.pure.js": "^1.0.3",
-    "dayjs": "^1.11.1",
+    "dayjs": "^1.11.4",
     "inquirer": "^8.2.4",
     "json2yaml": "^1.1.0",
     "vuepress": "1.9.7",
@@ -24,8 +24,8 @@
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
-    "vuepress-plugin-zooming": "^1.1.7",
-    "vuepress-theme-vdoing": "^1.11.3",
+    "vuepress-plugin-zooming": "^1.1.8",
+    "vuepress-theme-vdoing": "^1.12.5",
     "yamljs": "^0.3.0"
   }
 }
