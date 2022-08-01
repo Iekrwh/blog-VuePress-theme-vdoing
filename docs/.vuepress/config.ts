@@ -108,6 +108,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             //   { text: '实时计算', link: '/pages/' },
             ],
           },
+          {
+            text: '青训营',
+            items: [
+              { text: '第四届青训营', link: '/pages/ceb998/' },
+            ],
+          },
         ],
       },
       {
@@ -130,13 +136,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
             ],
           },
-          {
-            text: 'React',
-            items: [
-            //   { text: 'React', link: '/pages/' },
+        //   {
+        //     text: 'React',
+        //     items: [
+        //     //   { text: 'React', link: '/pages/' },
               
-            ],
-          },
+        //     ],
+        //   },
 
         ],
       },
